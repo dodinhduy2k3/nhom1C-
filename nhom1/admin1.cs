@@ -28,5 +28,11 @@ namespace nhom1
             tacgia tg = new tacgia();
             tg.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            sach s = new sach();
+            s.Show();
+        }
     }
 }

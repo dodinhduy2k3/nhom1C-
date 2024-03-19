@@ -11,3 +11,24 @@ C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.pdb
 C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.csprojResolveAssemblyReference.cache
 C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.user.resources
 C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.sach.resources
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\nhom1.exe.config
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.exe
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.pdb
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\nhom1.exe
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\nhom1.pdb
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\mscorlib.dll
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\System.Net.Http.dll
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\System.Net.Http.xml
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\normidna.nlp
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\normnfc.nlp
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\normnfd.nlp
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\normnfkc.nlp
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\bin\Debug\normnfkd.nlp
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.admin1.resources
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.dangnhap.resources
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.Properties.Resources.resources
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.sach.resources
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.tacgia.resources
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.user.resources
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.csproj.GenerateResource.Cache

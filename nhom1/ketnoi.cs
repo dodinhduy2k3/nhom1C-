@@ -10,9 +10,9 @@ namespace nhom1
     {
         public static OracleConnection connnectDB()
         {
-            String chuoi = @"Data Source=xe;User ID=QL-Thu-Vien;Password=123456;Unicode=True";
-            OracleConnection con = new OracleConnection(chuoi);
-            return con;
+            String chuoi = @"Data Source=xe;User ID=QLTV;Password=12345;Unicode=True";
+            OracleConnection conn = new OracleConnection(chuoi);
+            return conn;
         }
 
     }
