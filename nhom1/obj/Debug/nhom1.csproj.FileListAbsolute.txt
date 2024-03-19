@@ -1,0 +1,13 @@
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\bin\Debug\nhom1.exe.config
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\bin\Debug\nhom1.exe
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\bin\Debug\nhom1.pdb
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.admin1.resources
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.dangnhap.resources
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.Properties.Resources.resources
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.tacgia.resources
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.csproj.GenerateResource.Cache
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.exe
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.pdb
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.csprojResolveAssemblyReference.cache
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.user.resources
+C:\Users\DUY DO\Desktop\C#-phantan-QLTV\nhom1\nhom1\obj\Debug\nhom1.sach.resources
