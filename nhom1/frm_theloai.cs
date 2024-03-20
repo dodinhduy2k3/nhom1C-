@@ -6,49 +6,64 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.OracleClient;
 using System.Windows.Forms;
+using System.Data.OracleClient;
 
 namespace nhom1
 {
-    public partial class tacgia : Form
+    public partial class frm_theloai : Form
     {
+
         //Khai báo đối tượng
         OracleConnection conn;
         OracleCommand cmd;
         OracleDataAdapter da;
         DataTable dt;
         string sql = "";
-        public tacgia()
+        public frm_theloai()
         {
             InitializeComponent();
         }
 
-        private void tacgia_Load(object sender, EventArgs e)
+        private void frm_theloai_Load(object sender, EventArgs e)
         {
             conn = ketnoi.connnectDB();
             //gọi thủ tục lấy dữ liệu từ bảng
-            NguonTG();
+            NguonTL();
         }
-        public void NguonTG()
+        public void NguonTL()
         {
-            sql = "select * from tacgia";
+            sql = "select * from theloai";
 
             //Khởi tạo đối tượng4e
             da = new OracleDataAdapter(sql, conn);
             dt = new DataTable();
             da.Fill(dt);
             // đẩy dữ liệu từ bảng lên datagripview
-            dg_tg.DataSource = dt;
+            dg_tl.DataSource = dt;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dg_tl_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int dong = e.RowIndex;
+            //gán dữ liệu từ ô lên txtbox
+            txt_idtl.Text = dg_tl.Rows[dong].Cells[0].Value.ToString();
+            txt_ttl.Text = dg_tl.Rows[dong].Cells[1].Value.ToString();
+        }
+
         public void Xoatrang()
         {
-            txt_id.Text = "";
-            txt_t.Text = "";
+            txt_idtl.Text = "";
+            txt_ttl.Text = "";
         }
         public bool TrungThem(string manhap)
         {
-            sql = "select * from tacgia where tacgiaID= '" + manhap + "'";
+            sql = "select * from theloai where theLoaiID= '" + manhap + "'";
             da = new OracleDataAdapter(sql, conn);
             dt = new DataTable();
             da.Fill(dt);
@@ -60,58 +75,45 @@ namespace nhom1
         private void btnthem_Click(object sender, EventArgs e)
         {
             //Khai báo các tham số
-            string id = txt_id.Text;
-            string ten = txt_t.Text;
-            if (TrungThem(txt_id.Text) == true)
+            string id = txt_idtl.Text;
+            string ten = txt_ttl.Text;
+            if (TrungThem(txt_idtl.Text) == true)
             {
                 MessageBox.Show("Trùng mã sinh viên yêu cầu nhập lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
             //thêm dữ liệu
-            sql = "insert into tacgia(tacgiaID, tenTacGia ) values ('" + txt_id.Text + "', '" + txt_t.Text +  "')";
+            sql = "insert into theloai (theLoaiID,tenTheLoai) values ('" + txt_idtl.Text + "', '" + txt_ttl.Text + "')";
             //Thực hiện kiểm tra kết nối
 
             if (conn.State != ConnectionState.Open) conn.Open();
 
             cmd = new OracleCommand(sql, conn);
             cmd.ExecuteNonQuery();
-            NguonTG();
+            NguonTL();
             Xoatrang();
-        }
-
-        private void dg_tg_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            int dong = e.RowIndex;
-            //gán dữ liệu từ ô lên txtbox
-            txt_id.Text = dg_tg.Rows[dong].Cells[0].Value.ToString();
-            txt_t.Text = dg_tg.Rows[dong].Cells[1].Value.ToString();
         }
 
         private void btnsua_Click(object sender, EventArgs e)
         {
-            sql = "update tacgia" + " set tenTacGia ='" + txt_t.Text + "' where  tacgiaID = '" + txt_id.Text + "'";
+            sql = "update theloai" + " set tenTheLoai ='" + txt_ttl.Text + "' where  theLoaiID = '" + txt_idtl.Text + "'";
 
             if (conn.State != ConnectionState.Open) conn.Open();
 
             cmd = new OracleCommand(sql, conn);
             cmd.ExecuteNonQuery();
-            NguonTG();
+            NguonTL();
             Xoatrang();
         }
 
         private void btnxoa_Click(object sender, EventArgs e)
         {
-            sql = "delete from tacgia where  tacgiaID = '" + txt_id.Text + "'";
+            sql = "delete from theloai where  theLoaiID = '" + txt_idtl.Text + "'";
             if (conn.State != ConnectionState.Open) conn.Open();
             cmd = new OracleCommand(sql, conn);
             cmd.ExecuteNonQuery();
-            NguonTG();
+            NguonTL();
             Xoatrang();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
     }

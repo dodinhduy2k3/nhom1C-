@@ -48,7 +48,7 @@ namespace nhom1
             if (vaitro == "admin")
             {
 
-                MessageBox.Show("Đăng Nhập Thành Công với cài trò Admin");
+                MessageBox.Show("Đăng Nhập Thành Công với vai trò Admin");
                 admin1 formAdmin = new admin1();
                 formAdmin.Show();
 

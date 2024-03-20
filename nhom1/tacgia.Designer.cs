@@ -49,11 +49,12 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(13, 24);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 59);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -73,7 +74,7 @@
             // 
             this.dg_tg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dg_tg.Location = new System.Drawing.Point(685, 191);
-            this.dg_tg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dg_tg.Margin = new System.Windows.Forms.Padding(4);
             this.dg_tg.Name = "dg_tg";
             this.dg_tg.Size = new System.Drawing.Size(324, 251);
             this.dg_tg.TabIndex = 7;
@@ -85,7 +86,7 @@
             this.btnxoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnxoa.Location = new System.Drawing.Point(484, 404);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(105, 69);
             this.btnxoa.TabIndex = 4;
@@ -98,7 +99,7 @@
             this.btnsua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsua.Location = new System.Drawing.Point(318, 404);
-            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(111, 69);
             this.btnsua.TabIndex = 5;
@@ -111,7 +112,7 @@
             this.btnthem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnthem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnthem.Location = new System.Drawing.Point(146, 404);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(111, 69);
             this.btnthem.TabIndex = 6;
@@ -175,8 +176,10 @@
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.btnsua);
             this.Controls.Add(this.btnthem);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "tacgia";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "tacgia";
             this.Load += new System.EventHandler(this.tacgia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_tg)).EndInit();

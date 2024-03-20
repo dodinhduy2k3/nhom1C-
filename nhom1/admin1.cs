@@ -34,5 +34,17 @@ namespace nhom1
             sach s = new sach();
             s.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            frm_theloai tl = new frm_theloai();
+            tl.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frm_Taotk tk = new frm_Taotk();
+            tk.Show();
+        }
     }
 }

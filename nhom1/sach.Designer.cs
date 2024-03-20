@@ -40,13 +40,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.txt_ids = new System.Windows.Forms.TextBox();
             this.txt_ts = new System.Windows.Forms.TextBox();
             this.txt_nds = new System.Windows.Forms.TextBox();
             this.txt_idtg = new System.Windows.Forms.TextBox();
-            this.txt_idtl = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.txt_tk = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.cb_tl = new System.Windows.Forms.ComboBox();
+            this.lb_tb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dg_sach)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,11 +58,12 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(921, 23);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(107, 59);
             this.button1.TabIndex = 9;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -70,7 +73,7 @@
             this.label1.Location = new System.Drawing.Point(483, 23);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 38);
+            this.label1.Size = new System.Drawing.Size(84, 37);
             this.label1.TabIndex = 14;
             this.label1.Text = "Sách";
             // 
@@ -78,46 +81,50 @@
             // 
             this.dg_sach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dg_sach.Location = new System.Drawing.Point(495, 180);
-            this.dg_sach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dg_sach.Margin = new System.Windows.Forms.Padding(4);
             this.dg_sach.Name = "dg_sach";
-            this.dg_sach.Size = new System.Drawing.Size(555, 375);
+            this.dg_sach.Size = new System.Drawing.Size(688, 375);
             this.dg_sach.TabIndex = 13;
+            this.dg_sach.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dg_sach_CellMouseClick);
             // 
             // btnxoa
             // 
             this.btnxoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnxoa.BackgroundImage")));
             this.btnxoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.Location = new System.Drawing.Point(747, 640);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxoa.Location = new System.Drawing.Point(662, 640);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(105, 69);
             this.btnxoa.TabIndex = 10;
             this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnsua
             // 
             this.btnsua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsua.BackgroundImage")));
             this.btnsua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsua.Location = new System.Drawing.Point(470, 640);
-            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsua.Location = new System.Drawing.Point(407, 640);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(111, 69);
             this.btnsua.TabIndex = 11;
             this.btnsua.UseVisualStyleBackColor = true;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // btnthem
             // 
             this.btnthem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthem.BackgroundImage")));
             this.btnthem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnthem.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthem.Location = new System.Drawing.Point(218, 640);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnthem.Location = new System.Drawing.Point(150, 640);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(111, 69);
             this.btnthem.TabIndex = 12;
             this.btnthem.UseVisualStyleBackColor = true;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // label2
             // 
@@ -167,62 +174,41 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "ID tác giả:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Enabled = false;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(39, 479);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 32);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "ID thể loại:";
-            // 
             // txt_ids
             // 
-            this.txt_ids.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ids.Location = new System.Drawing.Point(196, 192);
+            this.txt_ids.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ids.Location = new System.Drawing.Point(197, 192);
             this.txt_ids.Multiline = true;
             this.txt_ids.Name = "txt_ids";
-            this.txt_ids.Size = new System.Drawing.Size(279, 32);
+            this.txt_ids.Size = new System.Drawing.Size(288, 32);
             this.txt_ids.TabIndex = 20;
             // 
             // txt_ts
             // 
-            this.txt_ts.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ts.Location = new System.Drawing.Point(196, 257);
+            this.txt_ts.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ts.Location = new System.Drawing.Point(197, 257);
             this.txt_ts.Multiline = true;
             this.txt_ts.Name = "txt_ts";
-            this.txt_ts.Size = new System.Drawing.Size(279, 32);
+            this.txt_ts.Size = new System.Drawing.Size(288, 32);
             this.txt_ts.TabIndex = 21;
             // 
             // txt_nds
             // 
-            this.txt_nds.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nds.Location = new System.Drawing.Point(196, 317);
+            this.txt_nds.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nds.Location = new System.Drawing.Point(197, 317);
             this.txt_nds.Multiline = true;
             this.txt_nds.Name = "txt_nds";
-            this.txt_nds.Size = new System.Drawing.Size(279, 94);
+            this.txt_nds.Size = new System.Drawing.Size(288, 94);
             this.txt_nds.TabIndex = 22;
             // 
             // txt_idtg
             // 
-            this.txt_idtg.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idtg.Location = new System.Drawing.Point(196, 429);
+            this.txt_idtg.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_idtg.Location = new System.Drawing.Point(197, 429);
             this.txt_idtg.Multiline = true;
             this.txt_idtg.Name = "txt_idtg";
-            this.txt_idtg.Size = new System.Drawing.Size(279, 32);
+            this.txt_idtg.Size = new System.Drawing.Size(288, 32);
             this.txt_idtg.TabIndex = 23;
-            // 
-            // txt_idtl
-            // 
-            this.txt_idtl.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_idtl.Location = new System.Drawing.Point(196, 479);
-            this.txt_idtl.Multiline = true;
-            this.txt_idtl.Name = "txt_idtl";
-            this.txt_idtl.Size = new System.Drawing.Size(279, 32);
-            this.txt_idtl.TabIndex = 24;
             // 
             // label7
             // 
@@ -236,20 +222,66 @@
             this.label7.TabIndex = 25;
             this.label7.Text = "Tìm kiếm:";
             // 
+            // txt_tk
+            // 
+            this.txt_tk.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_tk.Location = new System.Drawing.Point(197, 109);
+            this.txt_tk.Multiline = true;
+            this.txt_tk.Name = "txt_tk";
+            this.txt_tk.Size = new System.Drawing.Size(430, 32);
+            this.txt_tk.TabIndex = 26;
+            this.txt_tk.TextChanged += new System.EventHandler(this.txt_tk_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Enabled = false;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(39, 500);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(121, 32);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Thể loại:";
+            // 
+            // cb_tl
+            // 
+            this.cb_tl.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_tl.FormattingEnabled = true;
+            this.cb_tl.Location = new System.Drawing.Point(197, 500);
+            this.cb_tl.Name = "cb_tl";
+            this.cb_tl.Size = new System.Drawing.Size(288, 34);
+            this.cb_tl.TabIndex = 28;
+            this.cb_tl.SelectedIndexChanged += new System.EventHandler(this.cb_tl_SelectedIndexChanged);
+            // 
+            // lb_tb
+            // 
+            this.lb_tb.AutoSize = true;
+            this.lb_tb.Enabled = false;
+            this.lb_tb.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tb.Location = new System.Drawing.Point(865, 658);
+            this.lb_tb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_tb.Name = "lb_tb";
+            this.lb_tb.Size = new System.Drawing.Size(50, 32);
+            this.lb_tb.TabIndex = 29;
+            this.lb_tb.Text = "có:";
+            // 
             // sach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1063, 734);
+            this.ClientSize = new System.Drawing.Size(1196, 734);
+            this.Controls.Add(this.lb_tb);
+            this.Controls.Add(this.cb_tl);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_tk);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txt_idtl);
             this.Controls.Add(this.txt_idtg);
             this.Controls.Add(this.txt_nds);
             this.Controls.Add(this.txt_ts);
             this.Controls.Add(this.txt_ids);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -260,8 +292,10 @@
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.btnsua);
             this.Controls.Add(this.btnthem);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "sach";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "sach";
             this.Load += new System.EventHandler(this.sach_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dg_sach)).EndInit();
@@ -283,12 +317,14 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_ids;
         private System.Windows.Forms.TextBox txt_ts;
         private System.Windows.Forms.TextBox txt_nds;
         private System.Windows.Forms.TextBox txt_idtg;
-        private System.Windows.Forms.TextBox txt_idtl;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_tk;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox cb_tl;
+        private System.Windows.Forms.Label lb_tb;
     }
 }

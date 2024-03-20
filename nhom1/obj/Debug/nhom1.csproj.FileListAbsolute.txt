@@ -32,3 +32,5 @@ C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.sach.resource
 C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.tacgia.resources
 C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.user.resources
 C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.csproj.GenerateResource.Cache
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.frm_theloai.resources
+C:\Users\DELL\Desktop\New folder (2)\nhom1C-\nhom1\obj\Debug\nhom1.frm_Taotk.resources
